@@ -14,8 +14,8 @@ class Alien(Sprite):
 
         # Carrega a imagem do alienígena e define seu atributo rect
         image = pygame.image.load('images/alien.bmp')
-        default_image_size = (50, 50)
-        self.image = pygame.transform.scale(image, default_image_size)
+        DEFAULT_IMAGE_SIZE = (50, 50)
+        self.image = pygame.transform.scale(image, DEFAULT_IMAGE_SIZE)
         self.rect = self.image.get_rect()
 
         # Inicia cada novo alienígena próximo à parte superior esquerda da tela
